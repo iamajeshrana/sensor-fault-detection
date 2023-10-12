@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 project_name = "mlproject" # this name mention as your wish don't required any where its just for this module project package 
 
 list_of_files = [
-    ".github/workflows/.gitkeep",
+    ".github/workflows/main.yaml",
     f"src/{project_name}/__init__.py",
     f"src/{project_name}/exception.py",
     f"src/{project_name}/logger.py",
@@ -46,8 +46,6 @@ list_of_files = [
     f"src/{project_name}/utils/main_utils.py",
     "config/schema.yaml",
     "report.yaml",
-    "env.yaml",
-    "get_data.py",
     "main.py", # this code have new additions, but this file you have created manually project
     "Dockerfile", # this code have new additions, but this file you have created manually project
     "requirements.txt",

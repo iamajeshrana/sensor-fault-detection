@@ -1,6 +1,7 @@
 import pymongo
 from src.mlproject.constant.database import DATABASE_NAME # Because DATABASE_NAME we have alredy defined in constant database.py file
 import certifi # This library provide the certificate if you have sent the HTTP request to the server he provide ssl on layer.
+from src.mlproject.constant.env_variable import MONGODB_URL_KEY
 import os
 ca = certifi.where()
 
