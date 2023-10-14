@@ -94,10 +94,10 @@ jobs:
          docker pull ${{secrets.AWS_ECR_LOGIN_URI}}/${{ secrets.ECR_REPOSITORY_NAME }}:latest
 
     
-# Stop & Remove code not required enable if you have first time have run CI/CD, once imgae create then second CI/CD pipeline should have enable because it can remove the previous image.
-      # - name: Stop and remove sensor container if running
-      #   run: |
-      #    docker ps -q --filter "name=sensor" | grep -q . && docker stop sensor && docker rm -fv sensor
+Stop & Remove code not required enable if you have first time have run CI/CD, once imgae create then second CI/CD pipeline should have enable because it can remove the previous image.
+      - name: Stop and remove sensor container if running
+        run: |
+         docker ps -q --filter "name=sensor" | grep -q . && docker stop sensor && docker rm -fv sensor
        
        
       - name: Run Docker Image to serve users
